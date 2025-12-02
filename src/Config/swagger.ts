@@ -11,7 +11,7 @@ const options = {
     },
     servers: [
       {
-        url: "http://localhost:3018",
+        url: "https://test-deployment-3fz9.onrender.com",
       },
     ],
   },

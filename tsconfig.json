@@ -11,10 +11,9 @@
     //"types": [],
     // For nodejs:
     // "lib": ["esnext"],
-    // "types": [
-    //   "node",
-    //   "express"
-    // ],
+    "types": [
+      "node",
+    ],
     // and npm install -D @types/node
     "moduleResolution": "node", 
     "esModuleInterop": true,
