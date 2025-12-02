@@ -1,11 +1,13 @@
 import express from "express";
 import connectDB from "./Config/db.js";
 const app = express();
+import dotenv from "dotenv";
+dotenv.config();
 
 import { swaggerUi, swaggerSpec } from "./Config/swagger.js";
 import userRoutes from "./Routes/userRoutes.js";
 
-const PORT = 3018;
+const port = process.env.PORT || 1818;
 
 connectDB();
 
@@ -15,6 +17,6 @@ app.use(express.json());
 
 app.use("/api/v1/users", userRoutes);
 
-app.listen(PORT, () => {
-    console.log(`Server running on http://localhost:${PORT}`);
+app.listen(port, () => {
+    console.log(`Server running on http://localhost:${port}`);
 });
